@@ -1,23 +1,80 @@
-# Compiled class file
-*.class
+package aplicationv;
 
-# Log file
-*.log
+import java.util.Scanner;
 
-# BlueJ files
-*.ctxt
+public class aplicationsource {
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+	public static void menu () {
+			
+		System.out.println("\tCadastro de clientes");
+		System.out.println("0. Iniciar");
+		System.out.println("1. Incluir");
+		System.out.println("2. Alterar");
+		System.out.println("3. Excluir");
+		System.out.println("4. Consultar");
+		System.out.println("Opcao:");
+	
+	}
+	
+	public static void main(String[] args)  {
+	
+		int opcao = 0;
+		
+		try (Scanner ler = new Scanner(System.in)) {
+			menu ();
+			
+			opcao = ler.nextInt();
+		}
+		
+		switch(opcao) {
+		case 1:
+			Iniciar();
+			break;
+		case 2:
+			Incluir();
+			break;
+		case 3:
+			Alterar();
+			break;
+		case 4:
+			Excluir();
+			break;
+		case 5:
+			Consultar();
+			break;
+		
+		default:
+			System.out.println("opção invlída, tente novamente!!");
+		
+		}
+	}
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+	private static void Consultar() {
+		System.out.println("Metodos de consulta: ");
+		
+	}
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+	private static void Excluir() {
+		System.out.println("Metodos de exclusão: ");
+		
+	}
+
+	private static void Alterar() {
+		System.out.println("Metodos para alterar: ");
+		
+	}
+
+	private static void Incluir() {
+		System.out.println("Metodos para incluir: ");
+		
+	}
+
+	private static void Iniciar() {
+		System.out.println("Metodos para inciar: ");
+		
+	}
+
+	
+		
+	}
+	
